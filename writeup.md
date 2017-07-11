@@ -118,7 +118,7 @@ At each iteration we get three pictures, coming from the right, left and center 
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to come back to the center. These images show what a recovery looks like:
 
-<img src="./images/rec1.jpg" alt="" />   
+<img src="./images/rec1 (1).jpg" alt="" />   
 <img src="./images/rec2.jpg" alt="" />     
 <img src="./images/rec3.jpg" alt="" />  
 
