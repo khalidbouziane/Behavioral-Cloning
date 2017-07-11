@@ -124,6 +124,8 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 Then I repeated this process by driving the car in the track in the opposite direction, in order to get more data points.
 
+Before augumenting data, i removed 80% of data that are between 0.1 and -0.1, it helps balancing the distribution of data.
+
 To augment the data set, I also flipped images and angles thinking that this would help to generalize the model. For example, here is an image that has then been flipped:
 
 <img src="./images/center.jpg" alt="" /> <img src="./images/center_flip.jpg" alt="" />   
