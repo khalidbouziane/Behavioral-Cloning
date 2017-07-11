@@ -110,7 +110,7 @@ It is similar to the NVIDIA architecture, just a little bit simpler.
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. I used a joystick since I found very difficult to control the car with mouse and keyboard. In addition, the recorded steering angles are smoother, resulting in a better result. Here is an example image of center lane driving:
 
-<img src="./examples/center.jpg" alt="" />    
+<img src="./images/center.jpg" alt="" />    
 
 At each iteration we get three pictures, coming from the right, left and center cameras. I added an offset of 0.25 and -0.25 on the steering angle relative to the right and left cameras.
 
@@ -126,7 +126,7 @@ Then I repeated this process by driving the car in the track in the opposite dir
 
 To augment the data set, I also flipped images and angles thinking that this would help to generalize the model. For example, here is an image that has then been flipped:
 
-<img src="./examples/center.jpg" alt="" /> <img src="./examples/center_flip.jpg" alt="" />   
+<img src="./images/center.jpg" alt="" /> <img src="./images/center_flip.jpg" alt="" />   
 
 Here the code:
 
