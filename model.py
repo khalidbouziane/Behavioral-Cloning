@@ -1,7 +1,7 @@
 
-# coding: utf-8
 
-# In[2]:
+
+
 
 
 # import library
@@ -19,7 +19,6 @@ import matplotlib.pyplot as plt
 get_ipython().magic('matplotlib inline')
 
 
-# In[3]:
 
 
 # Load data
@@ -47,7 +46,7 @@ while i < len(samples):
       
 
 
-# In[5]:
+
 
 
 # split data
@@ -107,7 +106,7 @@ def  generator(samples,batch_size=32):
                     
 
 
-# In[6]:
+
 
 
 # define generators and image dimensions
@@ -121,11 +120,11 @@ row, col,ch = 160, 320, 3
 model = Sequential()
 # normalize the data and traslate to have zero mean
 model.add(Lambda(lambda x: x/127.5 - 1.0, input_shape=(row,col,ch)))
-# define layers
+# cropping images
 model.add(Cropping2D(cropping=((60,25), (0,0))))
 
 
-# In[7]:
+
 
 
 # architecture layers
@@ -147,7 +146,7 @@ model.add(Dense(1))
           
 
 
-# In[8]:
+
 
 
 # compile the model          
@@ -155,7 +154,7 @@ adam = Adam(lr=1e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
 model.compile(loss='mse', optimizer='adam')         
 
 
-# In[9]:
+
 
 
 #train the model
@@ -170,13 +169,13 @@ model.fit_generator(train_generator, samples_per_epoch=20000,
 model.save('model.h5')
 
 
-# In[ ]:
 
 
 
 
 
-# In[ ]:
+
+
 
 
 
