@@ -89,10 +89,10 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 TThe final model architecture (model.py lines 75-87) consisted of a convolution neural network with the following layers and layer sizes:
 
 ```python
-model.add(Convolution2D(16,5,5, subsample=(2,2), activation="relu"))
-model.add(Convolution2D(32,5,5, subsample=(2,2), activation="relu"))
-model.add(Convolution2D(48,5,5, subsample=(2,2), activation="relu"))
-model.add(Convolution2D(64,3,3, activation="relu"))
+model.add(Convolution2D(16,5,5, subsample=(2,2), activation="elu"))
+model.add(Convolution2D(32,5,5, subsample=(2,2), activation="elu"))
+model.add(Convolution2D(48,5,5, subsample=(2,2), activation="elu"))
+model.add(Convolution2D(64,3,3, activation="elu"))
 model.add(Flatten())
 model.add(Dense(200))
 model.add(Dropout(0.7))
